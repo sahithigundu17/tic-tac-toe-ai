@@ -3,7 +3,7 @@
 Play against an AI that adapts its difficulty — from casual fun to an **unbeatable opponent** powered by the **Minimax Algorithm with Alpha-Beta Pruning**.
 
 ## 🚀 Live Demo
-👉 [Play here](https://yourusername.github.io/tic-tac-toe-ai/) 
+👉 [Play here]([https://sahithigundu17.github.io/tic-tac-toe-ai/]) 
 
 ## 🕹️ Features
 - ✅ Human (X) vs AI (O)  
