@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #3c3c3c;
+  color:white;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: 3.5rem;
+  padding-left: 50px;
+  margin-bottom: 5px;
+}
+label{
+    font-size: 1.5rem;
+}
+#difficulty{
+    background-color: rgb(67, 66, 66);
+    border-radius: 5px;
+    color: white;
+    width:70px;
+    height: 30px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+#restart{
+    background-color: #c7f9cc;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+.controls {
+  margin: 15px;
+}
+
+.board {
+  display: grid;
+  padding-top: 50px;
+  padding-left: 50px;
+  background-color: rgb(205, 240, 240);
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 5px;
+  justify-content: center;
+  margin: 20px auto;
+  border: 2px solid #faf4f4;   /* 👈 thin border around the full grid */
+  border-radius: 10px;
+  width: fit-content;
+  box-shadow: 0 0 15px rgba(117, 224, 243, 0.7);
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 2px solid #f6f2f2;
+  border-radius: 10px;
+  font-size: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Default hover (empty cells only) */
+.cell:not(.filled):hover {
+  background: #eee;
+}
+
+/* User hover color (only empty cells) */
+.user-turn .cell:not(.filled):hover {
+  background: #6de92f; /* light green */
+}
+
+/* AI hover color (only empty cells) */
+.ai-turn .cell:not(.filled):hover {
+  background: #cb1515; /* light red */
+}
+
+#status {
+  font-size: 3rem;
+  margin-top: 5px;
+}
+.user-move {
+  background-color: #c7f9cc; /* light green */
+  color: #2d6a4f; /* dark green text */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.ai-move {
+  background-color: #f8d7da; /* light red/pink */
+  color: #842029; /* dark red text */
+  box-shadow: 0 0 15px  rgba(238, 99, 104, 0.7);
+  transition: box-shadow 0.3s ease-in-out;
+}
