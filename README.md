@@ -7,10 +7,33 @@ Play against an AI that adapts its difficulty — from casual fun to an **unbeat
 
 ## 🕹️ Features
 - ✅ Human (X) vs AI (O)  
-- ✅ Difficulty levels:
-  - **Easy** → Random moves (AI just guesses)  
-  - **Medium** → 50% Random, 50% Smart  
-  - **Hard** → Full **Minimax with Alpha-Beta Pruning** (unbeatable 🤖)  
+- 🤖 AI Difficulty Levels
+
+  ## Easy 🎲
+  
+    AI makes completely random moves.
+  
+    No strategy is applied, so it’s the best level for beginners to practice.
+  
+  ## Medium ⚖️
+  
+    AI plays a mix of random and smart moves.
+  
+    Sometimes it chooses a random move to keep the game unpredictable.
+  
+    Other times, it uses basic Minimax logic to block the player or try to win.
+  
+    Provides a balanced challenge where the player still has a fair chance to win.
+  
+  ## Hard 🧠
+  
+    AI uses the Minimax algorithm with Alpha-Beta Pruning.
+  
+    Simulates all possible future moves and always picks the best optimal move.
+  
+    Alpha-Beta pruning improves performance by ignoring unnecessary game tree branches.
+  
+    Extremely difficult to beat because the AI never makes mistakes.
 - ✅ Highlighted winning cells  
 - ✅ Colored moves:
   - Human moves → 🟩 Green  
